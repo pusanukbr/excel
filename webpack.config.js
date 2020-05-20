@@ -34,6 +34,8 @@ module.exports = {
   devtool: isDev ? 'source-map' : false,
   devServer: {
     port: 3000,
+    contentBase: path.join(__dirname, 'src'),
+    watchContentBase: true,
     hot: isDev
   },
   resolve: {
